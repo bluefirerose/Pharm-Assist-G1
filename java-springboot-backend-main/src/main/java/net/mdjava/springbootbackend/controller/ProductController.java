@@ -2,7 +2,7 @@ package net.mdjava.springbootbackend.controller;
 
 import net.mdjava.springbootbackend.exception.ResourceNotFoundException;
 import net.mdjava.springbootbackend.model.Product;
-import net.mdjava.springbootbackend.repository.ProductRepository;
+import net.mdjava.springbootbackend.repository.PatientsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import java.util.List;
 public class ProductController {
 
     @Autowired
-    private ProductRepository productRepository;
+    private PatientsRepository productRepository;
 
     @GetMapping
     public List<Product> index() {
