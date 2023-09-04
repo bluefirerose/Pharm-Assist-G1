@@ -1,0 +1,71 @@
+/* CSS for Edit Page */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #7ffac1;
+  background-color: #f2f2f2;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.alert-danger {
+  color: #dc3545;
+}
+
+.btn-primary {
+  background-color: #54c6e9;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #7ffac1;
+}
+
+/* Remove border radius from the submit button */
+.btn-primary[type="submit"] {
+  border-radius: 0;
+}
+
+/* Apply the color theme for the form inputs */
+.form-control,
+.btn-primary {
+  color: #333;
+}
+
+/* Apply styles to the form labels */
+label {
+  font-weight: bold;
+}
+
+/* Adjust the margins and paddings of the form */
+form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #54c6e9;
+  background-color: #f2f2f2;
+}
+
+/* Apply styles to the validation messages */
+.alert-danger {
+  margin-top: 5px;
+}
