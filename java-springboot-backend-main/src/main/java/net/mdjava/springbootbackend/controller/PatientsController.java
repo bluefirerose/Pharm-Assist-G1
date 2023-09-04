@@ -43,10 +43,10 @@ public class PatientsController {
 
         updatePatients.setName(patientsDetails.getName());
         updatePatients.setAddress(patientsDetails.getAddress());
-        // updatePatients.setEmailAddress(patientsDetails.getEmailAddress());
-        // updatePatients.setContactNumber(patientsDetails.getContactNumber());
+        updatePatients.setEmailAddress(patientsDetails.getEmailAddress());
+        updatePatients.setContactNumber(patientsDetails.getContactNumber());
 
-        updatePatients.save(updatePatients);
+        patientsRepository.save(updatePatients);
 
         return ResponseEntity.ok(updatePatients);
     }
