@@ -55,7 +55,7 @@ export class CreateComponent implements OnInit {
     console.log(this.form.value);
     this.categoryService.create(this.form.value).subscribe((res:any) => {
          console.log('Patient created successfully!');
-         this.router.navigateByUrl('patients/index');
+         this.router.navigateByUrl('patient/index');
     })
   }
 
