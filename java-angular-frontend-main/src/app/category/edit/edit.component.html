@@ -2,7 +2,7 @@
   <div class="container edit-con">
     <h1 class="center">Update Product</h1>
 
-    <a href="#" routerLink="/category/patient" class="btn btn-primary">Back</a>
+
 
     <form [formGroup]="form" (ngSubmit)="submit()">
       <div class="form-group">
@@ -25,7 +25,7 @@
       </div>
 
       <div class="form-group">
-        <label for="type">Type:</label>
+        <label for="type">Address:</label>
         <input
           formControlName="type"
           id="type"
@@ -44,7 +44,7 @@
       </div>
 
       <div class="form-group">
-        <label for="size">Size:</label>
+        <label for="size">Email Address:</label>
         <input
           formControlName="size"
           id="size"
@@ -63,7 +63,7 @@
       </div>
 
       <div class="form-group">
-        <label for="price">Price:</label>
+        <label for="price">Contact Number:</label>
         <input
           formControlName="price"
           id="price"
@@ -80,20 +80,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="form-group">
-            <label for="description">Description</label>
-            <textarea
-                formControlName="description"
-                id="description"
-                type="text"
-                [(ngModel)]="category.description"
-                class="form-control">
-            </textarea>
-            <div *ngIf="f['description'].touched && f['description'].invalid" class="alert alert-danger">
-                <div *ngIf="f['description'].errors && f['description'].errors['required']">Description is required.</div>
-            </div>
-        </div> -->
-
+      <a href="#" routerLink="/category/patient" class="btn btn-primary">Back</a>
       <button class="btn btn-primary" type="submit" [disabled]="!form.valid">
         Update
       </button>

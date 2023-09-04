@@ -1,7 +1,7 @@
 body {
   height: 100vh;
-  color: cornsilk;
-  background-image: url("src\assets\pharmassist.svg");
+  color: rgb(0, 0, 0);
+  background-image: url("src\assets\green.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
