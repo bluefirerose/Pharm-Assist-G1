@@ -1,8 +1,8 @@
 <body>
   <div class="container edit-con">
-    <h1 class="center">Update Product</h1>
+    <h1 class="center">Update Patient Information</h1>
 
-    <a href="#" routerLink="/product/index" class="btn btn-primary">Back</a>
+    <a href="#" routerLink="/category/patient" class="btn btn-primary">Back</a>
 
     <form [formGroup]="form" (ngSubmit)="submit()">
       <div class="form-group">
@@ -25,58 +25,58 @@
       </div>
 
       <div class="form-group">
-        <label for="type">Type:</label>
+        <label for="address">Address</label>
         <input
-          formControlName="type"
-          id="type"
-          type="text"
-          [(ngModel)]="category.type"
+          formControlName="address"
+          id="address"
+          type="address"
+          [(ngModel)]="category.address"
           class="form-control"
         />
         <div
-          *ngIf="f['type'].touched && f['type'].invalid"
+          *ngIf="f['address'].touched && f['address'].invalid"
           class="alert alert-danger"
         >
-          <div *ngIf="f['type'].errors && f['type'].errors['required']">
-            Type is required.
+          <div *ngIf="f['address'].errors && f['address'].errors['required']">
+            Address is required.
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="size">Size:</label>
+        <label for="email_address">Email Address:</label>
         <input
-          formControlName="size"
-          id="size"
+          formControlName="email_address"
+          id="email_address"
           type="text"
-          [(ngModel)]="category.size"
+          [(ngModel)]="category.email_address"
           class="form-control"
         />
         <div
-          *ngIf="f['size'].touched && f['size'].invalid"
+          *ngIf="f['email_address'].touched && f['email_address'].invalid"
           class="alert alert-danger"
         >
-          <div *ngIf="f['size'].errors && f['size'].errors['required']">
-            Size is required.
+          <div *ngIf="f['email_address'].errors && f['email_address'].errors['required']">
+            Email address is required.
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="price">Price:</label>
+        <label for="contact_number">Contact Number:</label>
         <input
-          formControlName="price"
-          id="price"
+          formControlName="contact_number"
+          id="contact_number"
           type="text"
-          [(ngModel)]="category.price"
+          [(ngModel)]="category.contact_number"
           class="form-control"
         />
         <div
-          *ngIf="f['price'].touched && f['price'].invalid"
+          *ngIf="f['contact_number'].touched && f['contact_number'].invalid"
           class="alert alert-danger"
         >
-          <div *ngIf="f['price'].errors && f['price'].errors['required']">
-            Price is required.
+          <div *ngIf="f['contact_number'].errors && f['contact_number'].errors['required']">
+            Contact Number is required.
           </div>
         </div>
       </div>
