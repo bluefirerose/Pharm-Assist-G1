@@ -43,8 +43,8 @@ public class PatientsController {
 
         updatePatients.setName(patientsDetails.getName());
         updatePatients.setAddress(patientsDetails.getAddress());
-        updatePatients.setEmailAddress(patientsDetails.getEmailAddress());
-        updatePatients.setContactNumber(patientsDetails.getContactNumber());
+        // updatePatients.setEmailAddress(patientsDetails.getEmailAddress());
+        // updatePatients.setContactNumber(patientsDetails.getContactNumber());
 
         patientsRepository.save(updatePatients);
 

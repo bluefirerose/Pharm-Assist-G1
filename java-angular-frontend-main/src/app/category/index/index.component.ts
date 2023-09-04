@@ -40,7 +40,7 @@ export class IndexComponent implements OnInit {
     this.categoryService.delete(id).subscribe(res => {
          this.categories = this.categories.filter(item => item.id !== id);
          alert("Record deleted successfully")
-         console.log('Product deleted successfully!');
+         console.log('Patient deleted successfully!');
     })
   }
 
