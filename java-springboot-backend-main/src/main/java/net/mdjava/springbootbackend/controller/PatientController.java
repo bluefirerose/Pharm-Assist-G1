@@ -46,7 +46,7 @@ public class PatientsController {
         // updatePatients.setEmailAddress(patientsDetails.getEmailAddress());
         // updatePatients.setContactNumber(patientsDetails.getContactNumber());
 
-        patientsRepository.save(updatePatients);
+        updatePatients.save(updatePatients);
 
         return ResponseEntity.ok(updatePatients);
     }
