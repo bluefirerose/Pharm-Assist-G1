@@ -9,12 +9,13 @@ import { CategoryModule } from './category/category.module';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { PatientComponent } from './category/patient/patient.component';
+import { MedcategoryComponent } from './medcategory/medcategory.component';
 
 
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AdminComponent, PatientComponent],
+  declarations: [AppComponent, HomeComponent, AdminComponent, PatientComponent, MedcategoryComponent],
   imports: [BrowserModule, AppRoutingModule, CategoryModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
