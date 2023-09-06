@@ -1,7 +1,7 @@
 export interface Category {
     id: number;
     name: string;
-    type: string;
-    size: string;
-    price: number;
+    address: string;
+    email_address: string;
+    contact_number: number;
 }

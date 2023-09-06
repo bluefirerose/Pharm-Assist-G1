@@ -24,13 +24,13 @@ public class Product {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "type")
-    private String type;
+    @Column(name = "address")
+    private String address;
 
-    @Column(name = "size")
-    private String size;
+    @Column(name = "email_address")
+    private String email_address;
 
-    @Column(name = "price")
-    private BigDecimal price;
+    @Column(name = "contact_number")
+    private BigDecimal contact_number;
 
 }

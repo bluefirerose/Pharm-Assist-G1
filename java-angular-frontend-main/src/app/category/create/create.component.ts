@@ -30,9 +30,9 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      type: new FormControl('', [Validators.required]),
-      size: new FormControl('', [Validators.required]),
-      price: new FormControl('', [Validators.required]),
+      address: new FormControl('', [Validators.required]),
+      email_addres: new FormControl('', [Validators.required]),
+      contact_number: new FormControl('', [Validators.required]),
       //description: new FormControl('', Validators.required)
     });
   }
@@ -54,7 +54,7 @@ export class CreateComponent implements OnInit {
   submit(){
     console.log(this.form.value);
     this.categoryService.create(this.form.value).subscribe((res:any) => {
-         console.log('Product created successfully!');
+         console.log('Patient created successfully!');
          this.router.navigateByUrl('category/patient');
     })
   }

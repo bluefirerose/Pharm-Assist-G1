@@ -63,7 +63,7 @@ export class EditComponent implements OnInit {
   submit(){
     console.log(this.form.value);
     this.categoryService.update(this.id, this.form.value).subscribe((res:any) => {
-         console.log('Product updated successfully!');
+         console.log('Patient updated successfully!');
          this.router.navigateByUrl('category/patient');
     })
   }

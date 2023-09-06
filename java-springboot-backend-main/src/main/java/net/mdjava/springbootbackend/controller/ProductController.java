@@ -32,19 +32,19 @@ public class ProductController {
     // build get product by id REST API
     @GetMapping("{id}")
     public ResponseEntity<Product> show(@PathVariable long id) {
-        Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product does not exist with id: " + id));
+        Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Patient does not exist with id: " + id));
         return ResponseEntity.ok(product);
     }
 
     // build update product REST API
     @PutMapping("{id}")
     public ResponseEntity<Product> update(@PathVariable long id, @RequestBody Product productDetails) {
-        Product updateProduct = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product does not exist with id: " + id));
+        Product updateProduct = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Patient does not exist with id: " + id));
 
         updateProduct.setName(productDetails.getName());
-        updateProduct.setType(productDetails.getType());
-        updateProduct.setSize(productDetails.getSize());
-        updateProduct.setPrice(productDetails.getPrice());
+        updateProduct.setAddress(productDetails.getAddress());
+        updateProduct.setEmailAddress(productDetails.getEmailAddress());
+        updateProduct.setContactNumber(productDetails.getContactNumber());
 
         productRepository.save(updateProduct);
 
@@ -54,7 +54,7 @@ public class ProductController {
     // build delete product REST API
     @DeleteMapping("{id}")
     public ResponseEntity<Product> destroy(@PathVariable long id) {
-        Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product does not exist with id: " + id));
+        Product product = productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Patient does not exist with id: " + id));
 
         productRepository.delete(product);
 
